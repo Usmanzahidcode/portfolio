@@ -1288,6 +1288,21 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+
+
+}
+.custom-animation{
+  animation: custom-fade 2ms linear;
 }
 
+@keyframes custom-fade {
+  0%{
+    .custom-animation{
+      opacity: 0;
+    },
+  100%{
+    opacity: 1;
+  }
+  }
+}
 /*# sourceMappingURL=style.css.map */

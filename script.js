@@ -16,17 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // TODO: Clean the code
     const processCoverImageUrl = (url) => {
         return url.replace(/(width=\d+,|height=\d+,|fit=[^,]+,|gravity=[^,]+,)/g, '');
     };
 
+    // TODO: Animation causes the items to disappear | classname = animate-box
     const renderPosts = (posts) => {
         posts.forEach(post => {
             const colDiv = document.createElement('div');
-            colDiv.className = 'col-md-4';
+            colDiv.className = 'col-md-4 animate-box';
 
             const postDiv = document.createElement('div');
-            postDiv.className = 'fh5co-blog animate-box';
+            postDiv.className = 'fh5co-blog';
 
             const backgroundImage = post.cover_image ? `background-image: url(${processCoverImageUrl(post.cover_image)});` : '';
 
@@ -48,5 +50,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    fetchPosts();
+    fetchPosts().then(function () {
+            var contentWayPoint = function () {
+                var i = 0;
+                $('.animate-box').waypoint(function (direction) {
+
+                    if (direction === 'down' && !$(this.element).hasClass('animated-fast')) {
+
+                        i++;
+
+                        $(this.element).addClass('item-animate');
+                        setTimeout(function () {
+
+                            $('body .animate-box.item-animate').each(function (k) {
+                                var el = $(this);
+                                setTimeout(function () {
+                                    var effect = el.data('animate-effect');
+                                    if (effect === 'fadeIn') {
+                                        el.addClass('fadeIn animated-fast');
+                                    } else if (effect === 'fadeInLeft') {
+                                        el.addClass('fadeInLeft animated-fast');
+                                    } else if (effect === 'fadeInRight') {
+                                        el.addClass('fadeInRight animated-fast');
+                                    } else {
+                                        el.addClass('fadeInUp animated-fast');
+                                    }
+
+                                    el.removeClass('item-animate');
+                                }, k * 100, 'easeInOutExpo');
+                            });
+
+                        }, 50);
+
+                    }
+
+                }, {offset: '85%'});
+            };
+            contentWayPoint();
+        }
+    );
 });

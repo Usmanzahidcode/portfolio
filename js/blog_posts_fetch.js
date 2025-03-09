@@ -33,15 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const backgroundImage = post.cover_image ? `background-image: url(${processCoverImageUrl(post.cover_image)});` : '';
 
             postDiv.innerHTML = `
-                <a href="${post.url}" class="blog-bg" style="${backgroundImage}"></a>
+                <a href="${post.url}" class="blog-bg" style="${backgroundImage}" target="_blank"></a>
                 <div class="blog-text">
                     <span class="posted_on">${post.readable_publish_date}</span>
-                    <h3><a href="${post.url}">${post.title}</a></h3>
+                    <h3><a href="${post.url}" target="_blank">${post.title}</a></h3>
                     <p>${post.description || 'No description available.'}</p>
                     <ul class="stuff">
                         <li><i class="icon-heart2"></i>${post.public_reactions_count}</li>
                         <li><i class="icon-pencil3"></i>${post.comments_count}</li>
-                        <li><a href="${post.url}">Read More<i class="icon-arrow-right22"></i></a></li>
+                        <li><a href="${post.url}" target="_blank">Read More<i class="icon-arrow-right22"></i></a></li>
                     </ul>
                 </div>`;
 

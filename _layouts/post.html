@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="max-w-3xl mx-auto px-6 py-10">
+    <h1 class="text-4xl font-bold text-gray-900">{{ page.title }}</h1>
+    <p class="text-gray-500 text-sm mt-2">Published on {{ page.date | date: "%B %d, %Y" }}</p>
+
+    <div class="mt-6 space-y-6 custom-markdown">
+        {{ content }}
+    </div>
+
+    <div class="mt-10 border-t pt-6 text-gray-600 text-sm">
+        <p>Written by: <strong>Usman Zahid</strong></p>
+        <p><a href="/blog" class="text-blue-600 hover:underline">← Back to Blog</a></p>
+    </div>
+</article>

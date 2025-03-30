@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <link href="/assets/stylesheets/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+
+<!-- Header -->
+<header class="bg-blue-600 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold"><a href="{{ '/' | relative_url }}">Usman Zahid</a></h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/blog" class="hover:underline">Blog</a></li>
+                <li><a href="/about" class="hover:underline">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="flex-grow container mx-auto p-6">
+    {{ content }}
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-300 p-4 mt-8 text-center">
+    <p>&copy; {{ 'now' | date: "%Y" }} My Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

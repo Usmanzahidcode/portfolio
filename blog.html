@@ -1,0 +1,16 @@
+---
+layout: blog
+title: "My Blog"
+permalink: /blog/
+---
+
+{% for post in site.posts %}
+<article class="bg-white shadow-lg rounded-lg p-6">
+    <h2 class="text-2xl font-bold">
+        <a href="{{ post.url }}" class="text-blue-600 hover:underline">{{ post.title }}</a>
+    </h2>
+    <p class="text-gray-500 text-sm">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p class="text-gray-700">{{ post.excerpt }}</p>
+    <a href="{{ post.url }}" class="text-blue-600 font-bold hover:underline">Read More →</a>
+</article>
+{% endfor %}

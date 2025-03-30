@@ -1,0 +1,39 @@
+.blog-post-content-wrapper h2 {
+    @apply text-3xl font-bold text-blue-700 mt-8;
+}
+
+.blog-post-content-wrapper h3 {
+    @apply text-2xl font-semibold text-blue-600 mt-6;
+}
+
+.blog-post-content-wrapper p {
+    @apply text-lg text-gray-800 leading-relaxed;
+}
+
+.blog-post-content-wrapper a {
+    @apply text-red-500 font-medium underline hover:text-red-700 transition;
+}
+
+.blog-post-content-wrapper blockquote {
+    @apply border-l-4 border-red-500 pl-4 italic text-gray-600;
+}
+
+.blog-post-content-wrapper ul {
+    @apply list-disc list-inside space-y-2;
+}
+
+.blog-post-content-wrapper ol {
+    @apply list-decimal list-inside space-y-2;
+}
+
+.blog-post-content-wrapper code {
+    @apply bg-gray-100 px-2 py-1 rounded text-red-600 font-mono;
+}
+
+.blog-post-content-wrapper pre {
+    @apply bg-gray-900 text-white p-4 rounded-lg overflow-x-auto;
+}
+
+.blog-post-content-wrapper img {
+    @apply rounded-lg shadow-md mx-auto;
+}

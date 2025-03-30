@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/assets/stylesheets/output.css">
     <title>Tailwind css</title>
 
@@ -27,25 +27,25 @@
 
     </script>
 </head>
-<body>
-<header class="bg-white shadow-md fixed top-0 w-full z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-        <a href="#" class="text-2xl font-bold text-blue-600">Usman Zahid</a>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="/" class="text-gray-700 hover:text-blue-600">Home</a></li>
-                <li><a href="/blog" class="text-gray-700 hover:text-blue-600">Blog</a></li>
-                <li><a href="/about" class="text-gray-700 hover:text-blue-600">About</a></li>
-            </ul>
-        </nav>
-    </div>
+<body class="bg-gray-100">
+<!-- Header -->
+<header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-gray-800">Usman Zahid</h1>
+    <nav>
+        <ul class="flex space-x-6">
+            <li><a href="#home" class="text-gray-600 hover:text-gray-900">Home</a></li>
+            <li><a href="#blog" class="text-gray-600 hover:text-gray-900">Blog</a></li>
+            <li><a href="#about" class="text-gray-600 hover:text-gray-900">About</a></li>
+            <li><a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- Add margin-top so content isn't hidden under the fixed header -->
-<div class="mt-16">
-    <h1>Dev.to Article</h1>
-    <div id="post-content"></div>
-</div>
-
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-5xl font-extrabold text-gray-900 mb-4">Building Scalable & Clean Web Solutions</h2>
+    <p class="text-lg text-gray-700 max-w-2xl">I specialize in backend development, ensuring well-structured and scalable applications with Laravel & PHP.</p>
+    <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition">View My Work</a>
+</section>
 </body>
 </html>

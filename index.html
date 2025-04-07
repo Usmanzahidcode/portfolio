@@ -8,150 +8,80 @@
     <link rel="stylesheet" href="assets/stylesheets/output.css">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-<!-- Header -->
-<header class="bg-white shadow-sm sticky top-0 z-10">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" class="text-xl font-bold text-indigo-600">John Doe</a>
-        <div class="space-x-6">
-            <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
-            <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</a>
-            <a href="#blog" class="text-gray-600 hover:text-indigo-600 transition">Blog</a>
-        </div>
-    </nav>
-</header>
 
-<!-- Hero Section -->
-<section class="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-    <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl font-bold mb-4">Hello, I'm John Doe</h1>
-        <p class="text-xl max-w-2xl mx-auto">Frontend developer specializing in modern web technologies and user experience design.</p>
+<div class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-white to-sky-100 p-10 text-center">
+    <h1 class="text-7xl font-bold tracking-[-7px] text-gray-900">Usman Zahid<span class="text-sky-900">.</span></h1>
+    <p class="mt-4 max-w-xl text-xl text-gray-600">Backend Engineer crafting fast, scalable systems — with precision and performance in mind.</p>
+    <div class="mt-6 flex space-x-4">
+        <!-- GitHub -->
+        <a href="https://github.com/yourusername" target="_blank" class="flex items-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800">
+            <i class="fab fa-github text-lg"></i>
+            GitHub
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="flex items-center gap-2 rounded-full bg-blue-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-800">
+            <i class="fab fa-linkedin-in text-lg"></i>
+            LinkedIn
+        </a>
+
+        <!-- Twitter/X -->
+        <a href="https://twitter.com/yourusername" target="_blank" class="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-900">
+            <i class="fab fa-x-twitter text-lg"></i>
+            X
+        </a>
     </div>
-</section>
 
-<!-- Projects Section -->
-<section id="projects" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Current Projects</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Project Alpha</h3>
-                    <p class="text-gray-600 mb-4">A responsive dashboard for monitoring system performance with real-time updates.</p>
-                    <a href="projects/alpha.html" class="text-indigo-600 hover:text-indigo-800 font-medium">View details →</a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Project Beta</h3>
-                    <p class="text-gray-600 mb-4">E-commerce solution with integrated payment processing and inventory management.</p>
-                    <a href="projects/beta.html" class="text-indigo-600 hover:text-indigo-800 font-medium">View details →</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Project Gamma</h3>
-                    <p class="text-gray-600 mb-4">AI-powered content recommendation engine for digital publishing platforms.</p>
-                    <a href="projects/gamma.html" class="text-indigo-600 hover:text-indigo-800 font-medium">View details →</a>
-                </div>
-            </div>
-        </div>
+    <!-- About Me Section -->
+    <div class="mt-12 max-w-3xl text-gray-700">
+        <h2 class="text-4xl font-semibold text-sky-900 mb-6">About Me</h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+            I am a passionate Backend Engineer with experience in building scalable, high-performance systems.
+            I specialize in creating robust APIs and architectures that stand the test of time and perform under pressure.
+            With a deep understanding of various technologies such as Node.js, Express, and SQL/NoSQL databases, I craft backend systems that scale seamlessly.
+        </p>
     </div>
-</section>
 
-<!-- Blog Section -->
-<section id="blog" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Latest Blog Posts</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Blog Post 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">The Future of Web Development</h3>
-                    <p class="text-gray-500 mb-2">March 25, 2025</p>
-                    <p class="text-gray-600 mb-4">Exploring emerging trends and technologies that will shape web development in the coming years.</p>
-                    <a href="blog/future-web-dev.html" class="text-indigo-600 hover:text-indigo-800 font-medium">Read more →</a>
-                </div>
+    <!-- Experience Section -->
+    <div class="mt-12 max-w-3xl text-gray-700">
+        <h2 class="text-4xl font-semibold text-sky-900 mb-6">Experience</h2>
+        <div class="space-y-8">
+            <!-- Experience 1 -->
+            <div class="flex flex-col items-start border-l-4 border-sky-500 pl-4">
+                <h3 class="text-2xl font-semibold text-gray-900">Backend Engineer</h3>
+                <p class="text-lg text-gray-600">Company ABC</p>
+                <p class="text-sm text-gray-500">Jan 2022 - Present</p>
+                <p class="mt-2 text-gray-600 text-left">
+                    Led the development of scalable backend services for e-commerce platforms, resulting in a 30% increase in system performance.
+                    Worked closely with frontend teams to integrate APIs and optimize data flow.
+                </p>
             </div>
 
-            <!-- Blog Post 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Optimizing Performance with Modern CSS</h3>
-                    <p class="text-gray-500 mb-2">March 15, 2025</p>
-                    <p class="text-gray-600 mb-4">Best practices for writing efficient CSS that improves loading times and user experience.</p>
-                    <a href="blog/modern-css.html" class="text-indigo-600 hover:text-indigo-800 font-medium">Read more →</a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-10">
-            <a href="blog.html" class="inline-block px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition">View all posts</a>
-        </div>
-    </div>
-</section>
-
-<!-- Open Source Section -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Open Source Contributions</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Contribution 1 -->
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">UI Component Library</h3>
-                    <p class="text-gray-600 mb-4">A collection of reusable UI components built with React and Tailwind CSS.</p>
-                    <a href="open-source/ui-library.html" class="text-indigo-600 hover:text-indigo-800 font-medium">View project →</a>
-                </div>
+            <!-- Experience 2 -->
+            <div class="flex flex-col items-start border-l-4 border-sky-500 pl-4">
+                <h3 class="text-2xl font-semibold text-gray-900">Junior Backend Developer</h3>
+                <p class="text-lg text-gray-600">Company XYZ</p>
+                <p class="text-sm text-gray-500">Jun 2020 - Dec 2021</p>
+                <p class="mt-2 text-gray-600 text-left">
+                    Built APIs using Node.js and Express to support core business functions.
+                    Designed database models and optimized queries, reducing response time by 20%.
+                </p>
             </div>
 
-            <!-- Contribution 2 -->
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">State Management Solution</h3>
-                    <p class="text-gray-600 mb-4">Lightweight and efficient state management for modern JavaScript applications.</p>
-                    <a href="open-source/state-management.html" class="text-indigo-600 hover:text-indigo-800 font-medium">View project →</a>
-                </div>
-            </div>
-
-            <!-- Contribution 3 -->
-            <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Developer Toolkit</h3>
-                    <p class="text-gray-600 mb-4">CLI tools for automating common development workflows and improving productivity.</p>
-                    <a href="open-source/dev-toolkit.html" class="text-indigo-600 hover:text-indigo-800 font-medium">View project →</a>
-                </div>
+            <!-- Experience 3 -->
+            <div class="flex flex-col items-start border-l-4 border-sky-500 pl-4">
+                <h3 class="text-2xl font-semibold text-gray-900">Intern</h3>
+                <p class="text-lg text-gray-600">Tech Solutions</p>
+                <p class="text-sm text-gray-500">Jan 2019 - May 2020</p>
+                <p class="mt-2 text-gray-600 text-left">
+                    Assisted in the development of microservices and integrated them with the primary system, improving the modularity and maintainability of the codebase.
+                </p>
             </div>
         </div>
     </div>
-</section>
 
-<!-- Contact Section -->
-<section class="py-16 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
-        <p class="text-xl max-w-2xl mx-auto mb-8">Interested in working together? Feel free to reach out for collaborations or just a friendly chat.</p>
-        <a href="contact.html" class="inline-block px-6 py-3 bg-white text-indigo-600 font-medium rounded-lg hover:bg-gray-100 transition">Get in touch</a>
-    </div>
-</section>
+</div>
 
-<!-- Footer -->
-<footer class="bg-gray-800 text-gray-300 py-8">
-    <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <p>© 2025 John Doe. All rights reserved.</p>
-            </div>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-white transition">Twitter</a>
-                <a href="#" class="hover:text-white transition">GitHub</a>
-                <a href="#" class="hover:text-white transition">LinkedIn</a>
-            </div>
-        </div>
-    </div>
-</footer>
+
 </body>
 </html>

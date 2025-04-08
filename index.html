@@ -6,7 +6,9 @@
     <title>John Doe | Personal Site</title>
 
     <link rel="stylesheet" href="assets/stylesheets/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous"
+          referrerpolicy="no-referrer"/>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
@@ -15,19 +17,22 @@
     <p class="mt-4 max-w-xl text-xl text-gray-600">Backend Engineer crafting fast, scalable systems — with precision and performance in mind.</p>
     <div class="mt-6 flex space-x-4">
         <!-- GitHub -->
-        <a href="https://github.com/yourusername" target="_blank" class="flex items-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800">
+        <a href="https://github.com/yourusername" target="_blank"
+           class="flex items-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800">
             <i class="fab fa-github text-lg"></i>
             GitHub
         </a>
 
         <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/yourusername" target="_blank" class="flex items-center gap-2 rounded-full bg-blue-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-800">
+        <a href="https://linkedin.com/in/yourusername" target="_blank"
+           class="flex items-center gap-2 rounded-full bg-sky-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-800">
             <i class="fab fa-linkedin-in text-lg"></i>
             LinkedIn
         </a>
 
         <!-- Twitter/X -->
-        <a href="https://twitter.com/yourusername" target="_blank" class="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-900">
+        <a href="https://twitter.com/yourusername" target="_blank"
+           class="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-900">
             <i class="fab fa-x-twitter text-lg"></i>
             X
         </a>
@@ -43,57 +48,64 @@
         </p>
     </div>
 
-    <!-- Experience Section -->
-    <div class="mt-12 max-w-3xl text-gray-700">
-        <h2 class="text-4xl font-semibold text-sky-900 mb-6">Experience</h2>
-        <div class="space-y-8">
-            <!-- Experience 1 -->
-            <div class="flex flex-col items-start border-l-4 border-sky-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-900">Backend Engineer</h3>
-                <p class="text-lg text-gray-600">Company ABC</p>
-                <p class="text-sm text-gray-500">Jan 2022 - Present</p>
-                <p class="mt-2 text-gray-600 text-left">
-                    Led the development of scalable backend services for e-commerce platforms, resulting in a 30% increase in system performance.
-                    Worked closely with frontend teams to integrate APIs and optimize data flow.
-                </p>
-            </div>
+    <!-- Experience -->
+    <section>
+        <div class="container max-w-5xl px-4 py-12 mx-auto">
+            <div class="grid gap-4 mx-4 sm:grid-cols-12">
+                <div class="col-span-12 sm:col-span-3">
+                    <div class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-sky-700">
+                        <h3 class="text-3xl font-semibold">Work History</h3>
+                        <span class="text-sm font-bold tracking-wider uppercase dark:text-gray-600">My experience and work history</span>
+                    </div>
+                </div>
+                <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
+                    <div class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
 
-            <!-- Experience 2 -->
-            <div class="flex flex-col items-start border-l-4 border-sky-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-900">Junior Backend Developer</h3>
-                <p class="text-lg text-gray-600">Company XYZ</p>
-                <p class="text-sm text-gray-500">Jun 2020 - Dec 2021</p>
-                <p class="mt-2 text-gray-600 text-left">
-                    Built APIs using Node.js and Express to support core business functions.
-                    Designed database models and optimized queries, reducing response time by 20%.
-                </p>
-            </div>
+                        <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-sky-700">
+                            <h3 class="text-xl text-left font-semibold tracking-wide">Associate Backend Engineer</h3>
+                            <time class="text-left text-xs tracking-wide uppercase dark:text-gray-600">Jan 2024</time>
+                            <p class="text-left mt-3">
+                                Working as an Associate Backend Engineer with a focus on building scalable APIs and improving backend performance using Laravel.
+                                Improved skills in system design, database optimization, and clean architecture principles. Regularly contribute to code reviews
+                                and collaborate with the team to solve complex technical problems.
+                            </p>
+                        </div>
 
-            <!-- Experience 3 -->
-            <div class="flex flex-col items-start border-l-4 border-sky-500 pl-4">
-                <h3 class="text-2xl font-semibold text-gray-900">Intern</h3>
-                <p class="text-lg text-gray-600">Tech Solutions</p>
-                <p class="text-sm text-gray-500">Jan 2019 - May 2020</p>
-                <p class="mt-2 text-gray-600 text-left">
-                    Assisted in the development of microservices and integrated them with the primary system, improving the modularity and maintainability of the codebase.
-                </p>
+                        <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-sky-700">
+                            <h3 class="text-xl text-left font-semibold tracking-wide">Junior Backend Engineer</h3>
+                            <time class="text-left text-xs tracking-wide uppercase dark:text-gray-600">Nov 2021</time>
+                            <p class="text-left mt-3">
+                                Joined as a Junior Backend Engineer, developing backend services and features using PHP and Laravel. Gained solid experience in
+                                writing clean, maintainable code and working within a team-based agile environment. Improved debugging skills and understanding
+                                of backend workflows and API integrations.
+
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-sky-700">
+                            <h3 class="text-xl text-left font-semibold tracking-wide">Backend Development Internship</h3>
+                            <time class="text-left text-xs tracking-wide uppercase dark:text-gray-600">Jul 2021</time>
+                            <p class="text-left mt-3">
+                                Interned as a backend developer working on Laravel-based projects. Learned core concepts of real-world development, including
+                                routing, controllers, and database handling. Built small modules and supported the team in testing and maintaining features.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-sky-700">
+                            <h3 class="text-xl text-left font-semibold tracking-wide">Bachelor's in Computer Science</h3>
+                            <time class="text-left text-xs tracking-wide uppercase dark:text-gray-600">2017 - 2021</time>
+                            <p class="text-left mt-3">
+                                Studied core computer science subjects with a focus on software engineering and backend development. Developed projects that
+                                strengthened programming logic, database concepts, and API development. Gained a strong foundation in problem-solving and
+                                collaboration through coursework and group projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-
-    <div class="space-y-6 border-l-2 border-blue-400 pl-6">
-        <div class="relative">
-            <div class="absolute -left-3 top-1.5 w-3 h-3 bg-blue-500 rounded-full"></div>
-            <h3 class="text-lg font-semibold">Backend Engineer</h3>
-            <p class="text-sm text-gray-500">Company ABC | Jan 2022 – Present</p>
-            <p class="text-sm text-gray-600 mt-1">
-                Led development of scalable services for e-commerce, increasing performance by 30%.
-            </p>
-        </div>
-        <!-- Repeat for other entries -->
-    </div>
-
-
+    </section>
 </div>
 
 

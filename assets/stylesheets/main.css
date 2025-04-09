@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto;
+}
+
+code {
+    @apply font-mono text-sm;
+}
+
+.k { @apply text-blue-400 font-bold; }
+.o { @apply text-gray-400; }
+.n { @apply text-green-400; }
+.s1 { @apply text-yellow-400; }
+.p { @apply text-red-400; }

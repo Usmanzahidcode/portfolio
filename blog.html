@@ -71,7 +71,7 @@
         .then(res => res.json())
         .then(posts => {
             const container = document.getElementById('blog-posts');
-            posts.slice(0, 5).forEach(post => {
+            posts.forEach(post => {
                 const article = document.createElement('article');
                 article.className = "flex max-w-xl flex-col items-start justify-between";
 

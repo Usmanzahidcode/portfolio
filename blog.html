@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Blog | Usman Zahid</title>
     <link rel="stylesheet" href="assets/stylesheets/output.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
 </head>
 <body class="bg-black text-gray-100 font-sans">
 <!-- Navbar -->
@@ -29,12 +36,11 @@
         </div>
     </nav>
 </div>
-<div class="mt-10">
+<div class="mt-30">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-white">Blog</h2>
 
-    <div class="container mx-auto text-center py-16">
-        <h2 class="text-4xl font-semibold text-white mb-4">Blog</h2>
-
-        <div id="blog-posts" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 mt-10 text-left">
+        <div id="blog-posts" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-4 gap-y-10 mt-10 text-left">
             <!-- Sample design -->
             <!--            <article class="flex max-w-xl flex-col items-start justify-between">-->
             <!--                <div class="flex items-center gap-x-4 text-sm text-gray-500">-->
@@ -52,6 +58,13 @@
         </div>
     </div>
 </div>
+
+<!-- Footer -->
+<footer class=" max-w-4xl mx-auto mt-30 mb-6 bg-zinc-800 text-white rounded-2xl px-6 py-4 flex items-center justify-around shadow-md backdrop-blur-md bg-opacity-30 border border-zinc-700/60">
+    <div class="text-sm font-semibold tracking-tight">
+        &copy; 2025 Usman Zahid. All rights reserved.
+    </div>
+</footer>
 
 <script>
     fetch('https://dev.to/api/articles?username=usmanzahidcode')

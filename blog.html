@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog | Usman Zahid</title>
+    <link rel="stylesheet" href="assets/stylesheets/output.css">
+</head>
+<body class="bg-black text-gray-100 font-sans">
+<!-- Navbar -->
+<div class="flex justify-center mt-6">
+    <nav class="bg-zinc-800 text-white rounded-2xl px-6 py-4 flex items-center justify-between w-full max-w-4xl shadow-md backdrop-blur-md bg-opacity-30 border border-zinc-700/60">
+        <div class="text-lg font-semibold tracking-tight">Usman Zahid.</div>
+        <div class="hidden sm:flex space-x-6">
+            <!-- Home Link with Background Hover -->
+            <a href="#" class="relative text-sm font-semibold transition duration-300 ease-in-out px-4 py-2 rounded-lg group">
+                <span class="relative z-10">Home</span>
+                <span class="absolute inset-0 bg-zinc-700 opacity-0 group-hover:opacity-50 rounded-lg transition duration-300"></span>
+            </a>
+            <!-- Projects Link with Background Hover -->
+            <a href="#" class="relative text-sm font-semibold transition duration-300 ease-in-out px-4 py-2 rounded-lg group">
+                <span class="relative z-10">Projects</span>
+                <span class="absolute inset-0 bg-zinc-700 opacity-0 group-hover:opacity-50 rounded-lg transition duration-300"></span>
+            </a>
+            <!-- Contact Link with Background Hover -->
+            <a href="#" class="relative text-sm font-semibold transition duration-300 ease-in-out px-4 py-2 rounded-lg group">
+                <span class="relative z-10">Contact</span>
+                <span class="absolute inset-0 bg-zinc-700 opacity-0 group-hover:opacity-50 rounded-lg transition duration-300"></span>
+            </a>
+        </div>
+    </nav>
+</div>
+<div class="mt-10">
+
+    <div class="container mx-auto text-center py-16">
+        <h2 class="text-4xl font-semibold text-white mb-4">Blog</h2>
+
+        <div id="blog-posts" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 mt-10 text-left">
+            <!-- Sample design -->
+            <!--            <article class="flex max-w-xl flex-col items-start justify-between">-->
+            <!--                <div class="flex items-center gap-x-4 text-sm text-gray-500">-->
+            <!--                    <time datetime="2020-03-16">Mar 16, 2020</time>-->
+            <!--                </div>-->
+            <!--                <div class="group relative">-->
+            <!--                    <h3 class="mt-3 text-lg font-semibold leading-snug text-white group-hover:text-sky-400 transition duration-300">-->
+            <!--                        <a href="#">-->
+            <!--                            <span class="absolute inset-0"></span>-->
+            <!--                            Boost your conversion rate-->
+            <!--                        </a>-->
+            <!--                    </h3>-->
+            <!--                </div>-->
+            <!--            </article>-->
+        </div>
+    </div>
+</div>
+
+<script>
+    fetch('https://dev.to/api/articles?username=usmanzahidcode')
+        .then(res => res.json())
+        .then(posts => {
+            const container = document.getElementById('blog-posts');
+            posts.slice(0, 5).forEach(post => {
+                const article = document.createElement('article');
+                article.className = "flex max-w-xl flex-col items-start justify-between";
+
+                article.innerHTML = `
+                    <div class="flex items-center gap-x-4 text-sm text-gray-500">
+                        <time datetime="${post.published_timestamp}">${post.readable_publish_date}</time>
+                    </div>
+                    <div class="group relative">
+                        <h3 class="mt-3 text-lg font-semibold leading-snug text-white group-hover:text-sky-400 transition duration-300">
+                            <a href="${post.url}" target="_blank" rel="noopener">
+                                <span class="absolute inset-0"></span>
+                                ${post.title}
+                            </a>
+                        </h3>
+                    </div>
+                `;
+
+                container.appendChild(article);
+            });
+        })
+        .catch(err => {
+            console.error("Failed to fetch blog posts", err);
+        });
+</script>
+
+</body>
+</html>

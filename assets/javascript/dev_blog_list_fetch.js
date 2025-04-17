@@ -4,13 +4,17 @@ fetch('https://dev.to/api/articles?username=usmanzahidcode')
         const container = document.getElementById('blog-posts');
         posts.forEach(post => {
             const article = document.createElement('article');
-            article.className = "flex max-w-xl gap-5 items-center justify-start";
+            article.className = "flex items-start gap-4";
 
             article.innerHTML = `
-                <time class="text-sm text-sky-500 text-left" datetime="${post.published_timestamp}">${post.readable_publish_date}</time>
-                <h3 class="text-lg text-left font-semibold leading-snug text-white group-hover:text-sky-400 transition duration-300">
-                    <a href="${post.url}" target="_blank" rel="noopener">${post.title}</a>
-                </h3>
+                <div class="w-24 flex-shrink-0 text-sm text-sky-500 text-right">
+                    <time datetime="${post.published_timestamp}">${post.readable_publish_date}</time>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-base text-left font-semibold leading-snug hover:text-sky-400 transition duration-300">
+                        <a href="${post.url}" target="_blank" rel="noopener">${post.title}</a>
+                    </h3>
+                </div>
             `;
 
             container.appendChild(article);

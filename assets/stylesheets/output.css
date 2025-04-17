@@ -13,7 +13,6 @@
     --color-sky-100: oklch(0.951 0.026 236.824);
     --color-sky-400: oklch(0.746 0.16 232.661);
     --color-sky-500: oklch(0.685 0.169 237.323);
-    --color-sky-700: oklch(0.5 0.134 242.749);
     --color-blue-400: oklch(0.707 0.165 254.624);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
@@ -366,6 +365,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -385,8 +387,8 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-sky-700 {
-    background-color: var(--color-sky-700);
+  .bg-sky-500 {
+    background-color: var(--color-sky-500);
   }
   .bg-zinc-700 {
     background-color: var(--color-zinc-700);
@@ -490,9 +492,6 @@
   }
   .text-sky-500 {
     color: var(--color-sky-500);
-  }
-  .text-sky-700 {
-    color: var(--color-sky-700);
   }
   .text-white {
     color: var(--color-white);
@@ -598,6 +597,15 @@
       --tw-tracking: -7px;
       letter-spacing: -7px;
     }
+  }
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 pre {

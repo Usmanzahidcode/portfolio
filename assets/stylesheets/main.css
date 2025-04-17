@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@layer utilities {
+    /* Remove the scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+/* Code styling for the blog post page */
 pre {
     @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto;
 }
@@ -8,8 +21,22 @@ code {
     @apply font-mono text-sm;
 }
 
-.k { @apply text-blue-400 font-bold; }
-.o { @apply text-gray-400; }
-.n { @apply text-green-400; }
-.s1 { @apply text-yellow-400; }
-.p { @apply text-red-400; }
+.k {
+    @apply text-blue-500 font-bold;
+}
+
+.o {
+    @apply text-gray-500;
+}
+
+.n {
+    @apply text-green-500;
+}
+
+.s1 {
+    @apply text-yellow-500;
+}
+
+.p {
+    @apply text-red-500;
+}

@@ -1,17 +1,5 @@
 @import "tailwindcss";
 
-@layer utilities {
-    /* Remove the scrollbar */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-
-    .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-}
-
 /* Code styling for the blog post page */
 pre {
     @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto;

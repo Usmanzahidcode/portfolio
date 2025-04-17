@@ -6,17 +6,18 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(0.704 0.191 22.216);
+    --color-red-500: oklch(0.637 0.237 25.331);
     --color-amber-500: oklch(0.769 0.188 70.08);
-    --color-yellow-400: oklch(0.852 0.199 91.936);
-    --color-green-400: oklch(0.792 0.209 151.711);
+    --color-yellow-500: oklch(0.795 0.184 86.047);
+    --color-green-500: oklch(0.723 0.219 149.579);
     --color-sky-100: oklch(0.951 0.026 236.824);
     --color-sky-400: oklch(0.746 0.16 232.661);
     --color-sky-500: oklch(0.685 0.169 237.323);
-    --color-blue-400: oklch(0.707 0.165 254.624);
+    --color-blue-500: oklch(0.623 0.214 259.815);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-400: oklch(0.707 0.022 261.325);
+    --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-900: oklch(0.21 0.034 264.665);
     --color-zinc-700: oklch(0.37 0.013 285.805);
     --color-zinc-800: oklch(0.274 0.006 286.033);
@@ -365,9 +366,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .overflow-y-scroll {
-    overflow-y: scroll;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -599,15 +597,6 @@
     }
   }
 }
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
 pre {
   overflow-x: auto;
   border-radius: var(--radius-lg);
@@ -623,19 +612,19 @@ code {
 .k {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
-  color: var(--color-blue-400);
+  color: var(--color-blue-500);
 }
 .o {
-  color: var(--color-gray-400);
+  color: var(--color-gray-500);
 }
 .n {
-  color: var(--color-green-400);
+  color: var(--color-green-500);
 }
 .s1 {
-  color: var(--color-yellow-400);
+  color: var(--color-yellow-500);
 }
 .p {
-  color: var(--color-red-400);
+  color: var(--color-red-500);
 }
 @property --tw-space-x-reverse {
   syntax: "*";

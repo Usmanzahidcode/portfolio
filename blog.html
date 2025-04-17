@@ -15,23 +15,23 @@
 <body class="bg-black text-gray-200 font-mono">
 <!-- Navbar -->
 <div class="flex justify-center mt-6">
-    <nav class="bg-zinc-800 text-white rounded-2xl px-6 py-4 flex items-center justify-between w-full max-w-4xl shadow-md backdrop-blur-md bg-opacity-30 border border-zinc-700/60">
+    <nav class="bg-zinc-800 rounded-2xl px-6 py-4 flex items-center justify-between w-full max-w-4xl shadow-md backdrop-blur-md bg-opacity-30 border border-zinc-700/60">
         <div class="text-lg font-semibold tracking-tight">Usman Zahid.</div>
         <div class="hidden sm:flex space-x-6">
             <!-- Home Link with Background Hover -->
             <a href="#" class="relative text-sm font-semibold transition duration-300 ease-in-out px-4 py-2 rounded-lg group">
                 <span class="relative z-10">Home</span>
-                <span class="absolute inset-0 bg-zinc-700 opacity-0 group-hover:opacity-50 rounded-lg transition duration-300"></span>
+                <span class="absolute inset-0 bg-zinc-700 opacity-50 group-hover:opacity-100 rounded-lg transition duration-300"></span>
             </a>
             <!-- Projects Link with Background Hover -->
             <a href="#" class="relative text-sm font-semibold transition duration-300 ease-in-out px-4 py-2 rounded-lg group">
                 <span class="relative z-10">Projects</span>
-                <span class="absolute inset-0 bg-zinc-700 opacity-0 group-hover:opacity-50 rounded-lg transition duration-300"></span>
+                <span class="absolute inset-0 bg-zinc-700 opacity-50 group-hover:opacity-100 rounded-lg transition duration-300"></span>
             </a>
             <!-- Contact Link with Background Hover -->
             <a href="#" class="relative text-sm font-semibold transition duration-300 ease-in-out px-4 py-2 rounded-lg group">
                 <span class="relative z-10">Contact</span>
-                <span class="absolute inset-0 bg-zinc-700 opacity-0 group-hover:opacity-50 rounded-lg transition duration-300"></span>
+                <span class="absolute inset-0 bg-zinc-700 opacity-50 group-hover:opacity-100 rounded-lg transition duration-300"></span>
             </a>
         </div>
     </nav>
@@ -42,19 +42,18 @@
 
         <div id="blog-posts" class="mx-auto max-w-2xl mt-10 flex flex-col gap-6 items-start justify-start">
             <!-- Sample design -->
-            <!-- <article class="flex max-w-xl flex-col items-start justify-between">                                                     -->
-            <!--     <div class="flex items-center gap-x-4 text-sm text-gray-500">                                                        -->
-            <!--         <time datetime="2020-03-16">Mar 16, 2020</time>                                                                  -->
-            <!--     </div>                                                                                                               -->
-            <!--     <div class="group relative">                                                                                         -->
-            <!--         <h3 class="mt-3 text-lg font-semibold leading-snug text-white group-hover:text-sky-400 transition duration-300"> -->
-            <!--             <a href="#">                                                                                                 -->
-            <!--                 <span class="absolute inset-0"></span>                                                                   -->
-            <!--                 Boost your conversion rate                                                                               -->
-            <!--             </a>                                                                                                         -->
-            <!--         </h3>                                                                                                            -->
-            <!--     </div>                                                                                                               -->
-            <!-- </article>                                                                                                               -->
+            <article class="hidden flex items-start gap-4">
+                <div class="w-24 flex-shrink-0 text-sm text-sky-500 text-right">
+                    <time datetime="${post.published_timestamp}">14 dec 2024</time>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-base text-left font-semibold leading-snug hover:text-sky-400 transition duration-300">
+                        <a href="#" target="_blank" rel="noopener">
+                            How will the quantum computers effect the web security? And what does it mean for the Backend engineers?
+                        </a>
+                    </h3>
+                </div>
+            </article>
         </div>
     </div>
 </div>

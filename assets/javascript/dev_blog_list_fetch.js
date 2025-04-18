@@ -11,7 +11,7 @@ fetch('https://dev.to/api/articles?username=usmanzahidcode')
                     <time datetime="${post.published_timestamp}">${post.readable_publish_date}</time>
                 </div>
                 <div class="flex-1">
-                    <h3 class="text-base text-left font-semibold leading-snug hover:text-sky-400 transition duration-300">
+                    <h3 class="text-base text-left font-semibold leading-snug hover:text-sky-500 transition duration-300">
                         <a href="${post.url}" target="_blank" rel="noopener">${post.title}</a>
                     </h3>
                 </div>

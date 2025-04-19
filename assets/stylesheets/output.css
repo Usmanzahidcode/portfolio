@@ -505,6 +505,9 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .line-through {
+    text-decoration-line: line-through;
+  }
   .opacity-50 {
     opacity: 50%;
   }

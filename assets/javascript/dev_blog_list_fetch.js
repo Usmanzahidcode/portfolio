@@ -7,7 +7,7 @@ fetch('https://dev.to/api/articles?username=usmanzahidcode')
             article.className = "flex items-start space-x-4";
 
             // Use slug to build internal blog post URL
-            const internalUrl = `/pages/blog-post.html?slug=${post.slug}`;
+            const internalUrl = `/pages/blog_post.html?slug=${post.slug}`;
 
             article.innerHTML = `
                 <div class="w-24 flex-shrink-0 text-base text-sky-500 text-right">

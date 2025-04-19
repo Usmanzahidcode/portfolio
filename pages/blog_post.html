@@ -2,15 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blog | Usman Zahid</title>
+    <link rel="stylesheet" href="/assets/stylesheets/output.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
 </head>
-<body class="bg-black">
-<h1 id="post-title" class="text-3xl font-bold mb-4"></h1>
-<p id="post-date" class="text-sm text-gray-500 mb-4"></p>
-<img id="post-cover" class="w-full rounded-lg mb-6" alt="Cover image"/>
-<div id="post-body" class="prose max-w-none"></div>
+<body class="bg-black text-gray-100 font-mono">
 
+<div id="header" class="min-h-1">
+    <!-- Will be added by the script -->
+</div>
 
+<!-- Post content -->
+<div class="container text-left mt-20 px-4 max-w-4xl mx-auto flex flex-col items-start justify-start space-y-6">
+    <h1 id="post-title" class="text-3xl font-bold mb-4"></h1>
+    <p id="post-date" class="text-sm text-gray-500 mb-4"></p>
+    <img id="post-cover" class="w-full rounded-lg mb-6" alt="Cover image"/>
+    <div id="post-body" class="prose max-w-none"></div>
+</div>
+
+<div id="footer" class="min-h-1">
+    <!-- Will be added by the script -->
+</div>
+<!-- Scripts -->
+<script src="/assets/javascript/header_footer_loader.js"></script>
 <script src="/assets/javascript/blog_post_fetch.js"></script>
 </body>
 </html>
+
+

@@ -24,6 +24,9 @@ if (!slug) {
             document.getElementById('post-cover').src = post.cover_image || '';
             postBody.innerHTML = post.body_html;
 
+            // Set page title
+            document.title = `${post.title} | Usman Zahid`;
+
             // Tags
             const tagsContainer = document.getElementById('post-tags');
             post.tags.forEach(tag => {
@@ -38,9 +41,11 @@ if (!slug) {
             canonical.rel = 'canonical';
             canonical.href = post.canonical_url;
             document.head.appendChild(canonical);
+
+            // Add the visible link
             document.getElementById('canonical-link').href = post.canonical_url;
 
-            // Cleanup code UI junk
+            // Cleanup code UI junk (Comes from dev.to for maximizing or minimizing the code blocks)
             document.querySelectorAll('.highlight__panel').forEach(panel => panel.remove());
         })
         .catch(err => {

@@ -1,24 +1,51 @@
-// Fetches the post details through slug provided in the url params.
-
 // Extract slug from query string
 const urlParams = new URLSearchParams(window.location.search);
 const slug = urlParams.get('slug');
 
-// If slug exists, fetch the post
-if (slug) {
-    fetch(`https://dev.to/api/articles/usmanzahidcode/${slug}`)
-        .then(res => res.json())
-        .then(post => {
-            console.log(post);
-            document.getElementById('post-title').textContent = post.title;
-            document.getElementById('post-date').textContent = new Date(post.published_timestamp).toDateString();
-            document.getElementById('post-cover').src = post.cover_image || '';
-            document.getElementById('post-body').innerHTML = post.body_html;
+// Elements
+const postTitle = document.getElementById('post-title');
+const postBody = document.getElementById('post-body');
 
-            // Remove fullscreen/minimize icons if they exist
+// Handle missing slug
+if (!slug) {
+    postTitle.textContent = "Post not found";
+    postBody.innerHTML = "<p class='text-red-500'>No blog post specified.</p>";
+} else {
+    fetch(`https://dev.to/api/articles/usmanzahidcode/${slug}`)
+        .then(res => {
+            if (!res.ok) throw new Error("Failed to fetch post");
+            return res.json();
+        })
+        .then(post => {
+            // Populate content
+            postTitle.textContent = post.title;
+            document.getElementById('post-date').textContent = post.readable_publish_date;
+            document.getElementById('post-read-time').textContent = `${post.reading_time_minutes} min read`;
+            document.getElementById('post-cover').src = post.cover_image || '';
+            postBody.innerHTML = post.body_html;
+
+            // Tags
+            const tagsContainer = document.getElementById('post-tags');
+            post.tags.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.textContent = `#${tag}`;
+                tagElement.className = 'bg-sky-500 text-sky-100 text-xs px-4 py-2 rounded-full';
+                tagsContainer.appendChild(tagElement);
+            });
+
+            // Canonical
+            const canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            canonical.href = post.canonical_url;
+            document.head.appendChild(canonical);
+            document.getElementById('canonical-link').href = post.canonical_url;
+
+            // Cleanup code UI junk
             document.querySelectorAll('.highlight__panel').forEach(panel => panel.remove());
         })
         .catch(err => {
             console.error('Failed to load blog post', err);
+            postTitle.textContent = "Error loading post";
+            postBody.innerHTML = "<p class='text-red-500'>Something went wrong while loading the post.</p>";
         });
 }

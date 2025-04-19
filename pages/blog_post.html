@@ -20,16 +20,29 @@
 </div>
 
 <!-- Post content -->
-<div class="container text-left mt-20 px-4 max-w-4xl mx-auto flex flex-col items-start justify-start space-y-6">
-    <h1 id="post-title" class="text-3xl font-bold mb-4"></h1>
-    <p id="post-date" class="text-sm text-gray-500 mb-4"></p>
-    <img id="post-cover" class="w-full rounded-lg mb-6" alt="Cover image"/>
-    <div id="post-body" class="prose max-w-none"></div>
+<div class="container post-content text-left mt-20 px-4 max-w-4xl mx-auto flex flex-col items-start justify-start space-y-6">
+    <img id="post-cover" class="w-full rounded-lg" alt="Cover image"/>
+    <h1 id="post-title" class="text-4xl font-bold"></h1>
+
+    <p class="post-time-info text-sm text-gray-500">
+        <span id="post-date"></span> &bull;
+        <span id="post-read-time"></span>
+    </p>
+
+    <div id="post-tags" class="flex flex-wrap space-x-4"></div>
+
+    <div id="post-body" class="max-w-none flex flex-col items-start justify-start space-y-6"></div>
+
+    <a id="canonical-link" href="#" target="_blank" class="text-sky-500 text-sm hover:underline">
+        View on Dev.to
+    </a>
+
 </div>
 
 <div id="footer" class="min-h-1">
     <!-- Will be added by the script -->
 </div>
+
 <!-- Scripts -->
 <script src="/assets/javascript/header_footer_loader.js"></script>
 <script src="/assets/javascript/blog_post_fetch.js"></script>

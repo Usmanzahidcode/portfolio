@@ -15,7 +15,7 @@ fetch('https://dev.to/api/articles?username=usmanzahidcode')
                 </div>
                 <div class="flex-1">
                     <h3 class="text-base text-left hover:text-sky-500 transition duration-300">
-                        <a href="${internalUrl}">${post.title}</a>
+                        <a href="${internalUrl}" target="_blank">${post.title}</a>
                     </h3>
                 </div>
             `;

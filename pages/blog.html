@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blog | Usman Zahid</title>
+    <link rel="stylesheet" href="/assets/stylesheets/output.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+</head>
+<body class="bg-black text-gray-100 font-mono">
+
+<div id="header" class="min-h-1">
+    <!-- Will be added by the script -->
+</div>
+
+<div class="container text-center mt-20 px-4 max-w-4xl mx-auto">
+    <h2 class="text-4xl font-semibold">Blog</h2>
+    <p class=" mt-6 sm:text-lg tracking-wide leading-relaxed mb-6">Sharing what I learn along the way — thoughts, experiences, and lessons from my journey in
+        backend development.</p>
+    <div id="blog-posts" class="mx-auto max-w-2xl mt-10 flex flex-col gap-6 items-start justify-start">
+        <!-- Sample design (Does not display, added through API) -->
+        <article class="hidden flex items-start gap-4">
+            <div class="w-24 flex-shrink-0 text-sm text-sky-500 text-right">
+                <time datetime="${post.published_timestamp}">14 dec 2024</time>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-base text-left font-semibold leading-snug hover:text-sky-500 transition duration-300">
+                    <a href="#" target="_blank" rel="noopener">
+                        How will the quantum computers effect the web security? And what does it mean for the Backend engineers?
+                    </a>
+                </h3>
+            </div>
+        </article>
+    </div>
+</div>
+
+<div id="footer" class="min-h-1">
+    <!-- Will be added by the script -->
+</div>
+
+<!-- Scripts -->
+<script src="/assets/javascript/header_footer_loader.js"></script>
+<script src="/assets/javascript/dev_blog_list_fetch.js"></script>
+</body>
+</html>

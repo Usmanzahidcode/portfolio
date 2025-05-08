@@ -1,148 +1,99 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Personal Site</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="assets/stylesheets/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous"
+    <!-- Tailwind output -->
+    <link rel="stylesheet" href="/assets/stylesheets/output.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
           referrerpolicy="no-referrer"/>
+
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <title>Usman Zahid</title>
+
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-black text-gray-100 font-mono">
 
-<div class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-sky-100 to-sky-200 p-10 text-center">
-    <img src="assets/media/images/20240802_102823.jpg" alt="Description of the image" class="w-80 rounded-lg mb-2">
-    <h1 class="text-7xl font-bold tracking-[-7px] text-gray-900">Usman Zahid<span class="text-sky-900">.</span></h1>
-    <div class="description">
-        <p class="mt-4 text-xl text-gray-700 tracking-tight font-mono uppercase">
-            Backend Engineer | API Specialist | Problem Solver | Book, Music, and Nature Lover | Suffers with Perfectionism
-        </p>
-        <p class="mt-4 mx-auto text-xl max-w-5xl text-gray-700 tracking-wide">
-            Experienced in shaping systems that balance complexity with simplicity. I focus on long-term stability and practical solutions, while fostering
-            collaboration and growth within teams. Always looking to improve, not just the code, but the way we work together.
-        </p>
-    </div>
-
-    <div class="mt-6 flex space-x-4">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/usmanzahidx03/" target="_blank"
-           class="flex items-center gap-2 rounded-full bg-gray-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-800">
-            <i class="fab fa-linkedin-in text-lg"></i>
-            LinkedIn
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/Usmanzahidcode" target="_blank"
-           class="flex items-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800">
-            <i class="fab fa-github text-lg"></i>
-            GitHub
-        </a>
-
-        <!-- Dev.to -->
-        <a href="https://dev.to/usmanzahidcode" target="_blank"
-           class="flex items-center gap-2 rounded-full bg-green-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-800">
-            <i class="fa-brands fa-dev text-lg"></i>
-            Blog
-        </a>
-
-        <!-- Twitter/X -->
-        <a href="https://x.com/UsmanZ_" target="_blank"
-           class="flex items-center gap-2 rounded-full bg-sky-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-900">
-            <i class="fab fa-x-twitter text-lg"></i>
-            X
-        </a>
-    </div>
-
-    <!--    &lt;!&ndash; About Me Section &ndash;&gt;-->
-    <!--    <div class="mt-12 max-w-3xl text-gray-700">-->
-    <!--        <h3 class="text-4xl font-semibold text-sky-900 mb-6">About Me</h3>-->
-    <!--        <p class="text-lg text-gray-600 leading-relaxed">-->
-    <!--            I am a passionate Backend Engineer with experience in building scalable, high-performance systems.-->
-    <!--            I specialize in creating robust APIs and architectures that stand the test of time and perform under pressure.-->
-    <!--            With a deep understanding of various technologies such as Node.js, Express, and SQL/NoSQL databases, I craft backend systems that scale seamlessly.-->
-    <!--        </p>-->
-    <!--    </div>-->
-
-    <!--    &lt;!&ndash; Experience &ndash;&gt;-->
-    <!--    <div class="container mx-auto mt-10 h-full">-->
-    <!--        <h3 class="text-4xl font-semibold text-sky-900 mb-6">Work Experience</h3>-->
-    <!--        <div class="relative wrap overflow-hidden h-full">-->
-    <!--            <div class="border-2-2 absolute border-opacity-20 border-sky-700 h-full border" style="left: 50%"></div>-->
-
-    <!--            &lt;!&ndash; right timeline &ndash;&gt;-->
-    <!--            <div class="mb-4 flex justify-center gap-10 items-center w-full right-timeline">-->
-    <!--                <div class="order-1 w-5/12"></div>-->
-    <!--                <div class="z-20 flex items-center order-1 bg-sky-700 shadow-xl w-6 h-6 rounded-full">-->
-    <!--                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>-->
-    <!--                </div>-->
-    <!--                <div class="order-1 w-5/12 pl-2 py-4 text-left">-->
-    <!--                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Associate Backend Engineer</h3>-->
-    <!--                    <span class="text-xs block mb-2 text-gray-600 uppercase">Jan 2024</span>-->
-    <!--                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">-->
-    <!--                        Working as an Associate Backend Engineer with a focus on building scalable APIs and improving backend performance using Laravel.-->
-    <!--                        Improved skills in system design, database optimization, and clean architecture principles. Regularly contribute to code reviews-->
-    <!--                        and collaborate with the team to solve complex technical problems.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-
-    <!--            </div>-->
-
-    <!--            &lt;!&ndash; left timeline &ndash;&gt;-->
-    <!--            <div class="mb-8 flex justify-center gap-10 items-center flex-row-reverse w-full left-timeline">-->
-    <!--                <div class="order-1 w-5/12"></div>-->
-    <!--                <div class="z-20 flex items-center order-1 bg-sky-700 shadow-xl w-6 h-6 rounded-full">-->
-    <!--                    <h1 class="mx-auto text-white font-semibold text-lg"></h1>-->
-    <!--                </div>-->
-    <!--                <div class="order-1 rounded-lg w-5/12 py-4 text-right">-->
-    <!--                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Junior Backend Engineer</h3>-->
-    <!--                    <span class="text-xs block mb-2 text-gray-600 uppercase">Nov 2021</span>-->
-    <!--                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">-->
-    <!--                        Joined as a Junior Backend Engineer, developing backend services and features using PHP and Laravel. Gained solid experience in-->
-    <!--                        writing clean, maintainable code and working within a team-based agile environment. Improved debugging skills and understanding-->
-    <!--                        of backend workflows and API integrations.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-
-    <!--            &lt;!&ndash; right timeline &ndash;&gt;-->
-    <!--            <div class="mb-4 flex justify-center gap-10 items-center w-full right-timeline">-->
-    <!--                <div class="order-1 w-5/12"></div>-->
-    <!--                <div class="z-20 flex items-center order-1 bg-sky-700 shadow-xl w-6 h-6 rounded-full">-->
-    <!--                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>-->
-    <!--                </div>-->
-    <!--                <div class="order-1 w-5/12 pl-2 py-4 text-left">-->
-    <!--                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Associate Backend Engineer</h3>-->
-    <!--                    <span class="text-xs block mb-2 text-gray-600 uppercase">Jan 2024</span>-->
-    <!--                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">-->
-    <!--                        Working as an Associate Backend Engineer with a focus on building scalable APIs and improving backend performance using Laravel.-->
-    <!--                        Improved skills in system design, database optimization, and clean architecture principles. Regularly contribute to code reviews-->
-    <!--                        and collaborate with the team to solve complex technical problems.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-
-    <!--            </div>-->
-
-    <!--            &lt;!&ndash; left timeline &ndash;&gt;-->
-    <!--            <div class="mb-8 flex justify-center gap-10 items-center flex-row-reverse w-full left-timeline">-->
-    <!--                <div class="order-1 w-5/12"></div>-->
-    <!--                <div class="z-20 flex items-center order-1 bg-sky-700 shadow-xl w-6 h-6 rounded-full">-->
-    <!--                    <h1 class="mx-auto text-white font-semibold text-lg"></h1>-->
-    <!--                </div>-->
-    <!--                <div class="order-1 rounded-lg w-5/12 py-4 text-right">-->
-    <!--                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Junior Backend Engineer</h3>-->
-    <!--                    <span class="text-xs block mb-2 text-gray-600 uppercase">Nov 2021</span>-->
-    <!--                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">-->
-    <!--                        Joined as a Junior Backend Engineer, developing backend services and features using PHP and Laravel. Gained solid experience in-->
-    <!--                        writing clean, maintainable code and working within a team-based agile environment. Improved debugging skills and understanding-->
-    <!--                        of backend workflows and API integrations.-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+<div id="header" class="min-h-1">
+    <!-- Will be added by the script -->
 </div>
 
+<!-- Hero Section -->
+<div class="text-center flex flex-col space-y-6 items-center justify-center mt-20 max-w-4xl mx-auto">
+    <img src="assets/media/images/magicpattern-blob-1745054288498.png" alt="Image of Usman Zahid" class="w-80"/>
+
+    <h1 class="text-4xl sm:text-7xl font-bold tracking-tight sm:tracking-[-7px]">
+        Usman Zahid<span class="text-amber-500">.</span>
+    </h1>
+
+    <div class="description">
+        <p class="text-sm sm:text-base tracking-wide uppercase">
+            Backend Engineer | Lifelong Learner | Books, Music, and Nature Enthusiast
+        </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="flex flex-wrap justify-center gap-6">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/usmanzahidx03/" target="_blank"
+           class="flex items-center gap-2 rounded-full px-4 py-2 text-base transition duration-300 text-sky-500 hover:bg-sky-500 hover:text-sky-100 hover:shadow-md">
+            <i class="fab fa-linkedin-in text-lg"></i> LinkedIn
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Usmanzahidcode" target="_blank"
+           class="flex items-center gap-2 rounded-full px-4 py-2 text-base transition duration-300 text-sky-500 hover:bg-sky-500 hover:text-sky-100 hover:shadow-md">
+            <i class="fab fa-github text-lg"></i> GitHub
+        </a>
+        <!-- Twitter/X -->
+        <a href="https://x.com/UsmanZ_" target="_blank"
+           class="flex items-center gap-2 rounded-full  px-4 py-2 text-base transition duration-300 text-sky-500 hover:bg-sky-500 hover:text-sky-100 hover:shadow-md">
+            <i class="fab fa-x-twitter text-lg"></i> X
+        </a>
+    </div>
+</div>
+
+<!-- About Me Section -->
+<div class="container text-center mt-20 px-4 max-w-4xl mx-auto flex flex-col space-y-6">
+
+    <h3 class="text-4xl font-semibold">About Me</h3>
+    <p class="text-base">
+        I’m Usman Zahid, a Backend Engineer who thrives on solving complex problems with clean, scalable solutions. I work with Laravel and PHP to
+        create efficient APIs and optimize backend performance—building systems that don’t just work but evolve seamlessly.
+    </p>
+    <p class="text-base">
+        For me, it’s all about collaboration and innovation. I design systems with simplicity in mind while always pushing to make both the code and the
+        team better, faster, and smarter every day.
+    </p>
+</div>
+
+<!-- Work Experience -->
+<div id="experience-section" class="container mt-20 text-center max-w-4xl mx-auto flex flex-col space-y-6">
+    <h3 class="text-4xl font-semibold">Work Experience</h3>
+    <div id="experience-timeline" class="relative wrap overflow-hidden h-full">
+        <div class="absolute inset-y-0 left-1/2 w-px bg-zinc-700/60"></div>
+
+        <!-- Experience will be added here by script -->
+    </div>
+</div>
+
+
+<div id="footer" class="min-h-1">
+    <!-- Will be added by the script -->
+</div>
+
+<!-- Scripts -->
+<script src="/assets/javascript/experience_handler.js"></script>
+<script src="/assets/javascript/header_footer_loader.js"></script>
 </body>
 </html>

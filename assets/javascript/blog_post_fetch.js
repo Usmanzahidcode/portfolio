@@ -21,7 +21,14 @@ if (!slug) {
             postTitle.textContent = post.title;
             document.getElementById('post-date').textContent = post.readable_publish_date;
             document.getElementById('post-read-time').textContent = `${post.reading_time_minutes} min read`;
-            document.getElementById('post-cover').src = post.cover_image || '';
+
+            const coverElement = document.getElementById('post-cover');
+            if (post.cover_image) {
+                coverElement.src = post.cover_image;
+            } else {
+                coverElement.remove();
+            }
+
             postBody.innerHTML = post.body_html;
 
             // Set page title

@@ -18,15 +18,15 @@
 }
 
 .post-content ul {
-    @apply list-disc list-inside mb-4;
+    @apply list-disc list-outside mb-4;
 }
 
 .post-content ol {
-    @apply list-decimal list-inside mb-4;
+    @apply list-decimal list-outside mb-4;
 }
 
 .post-content li {
-    @apply mb-1;
+    @apply list-outside mb-1;
 }
 
 .post-content a {
@@ -53,17 +53,28 @@
     @apply italic;
 }
 
-/* Code styling for the blog post page */
+/* Code block container */
+.js-code-highlight {
+    @apply w-full block rounded-xl overflow-x-auto;
+}
+
 pre {
-    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto;
+    @apply w-full block bg-gray-900 text-gray-100 p-4 rounded-xl overflow-x-auto;
 }
 
 code {
-    @apply font-mono text-sm;
+    @apply font-mono text-sm break-words;
 }
 
+/* Optional: inline code styling (inside p tags) */
+p code {
+    @apply bg-gray-800 text-yellow-300 px-1 py-0.5 rounded;
+    font-size: 0.95em;
+}
+
+/* Syntax highlighting classes (optional, if using something like Prism or Highlight.js) */
 .k {
-    @apply text-sky-500 font-bold;
+    @apply text-sky-400 font-semibold; /* keyword */
 }
 
 .o {
@@ -80,4 +91,15 @@ code {
 
 .p {
     @apply text-red-500;
+}
+
+pre::-webkit-scrollbar {
+    height: 6px;
+}
+pre::-webkit-scrollbar-track {
+    background: theme('colors.gray.800');
+}
+pre::-webkit-scrollbar-thumb {
+    background: theme('colors.gray.600');
+    border-radius: 4px;
 }
